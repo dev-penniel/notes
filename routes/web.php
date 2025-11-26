@@ -20,7 +20,9 @@ Route::middleware(['auth'])->group(function () {
 });
 
 Route::middleware(['auth'])->group(function () {
-    Volt::route('notes', 'notes')->name('notes');
+    Volt::route('notes/index', 'notes.index')->name('notes.index');
+    Volt::route('notes/create', 'notes.create')->name('notes.create');
+    Volt::route('notes/{slug}/edit', 'notes.edit')->name('notes.edit');
 });
 
 
