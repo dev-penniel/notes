@@ -3,7 +3,7 @@
 use Livewire\Volt\Component;
 use Livewire\Attributes\Layout;
 
-new 
+new
 #[Layout('components.layouts.app.frontend')]
 class extends Component {
     //
@@ -17,8 +17,8 @@ class extends Component {
                 <h1 class="text-2xl font-bold">Your notes</h1>
                 <p class="text-sm text-gray-600 dark:text-gray-300 mt-1">Quickly find, filter, and manage your notes.</p>
             </div>
-          
-          
+
+
             <button @click="toggleTheme()" class="ml-2 p-2 rounded-md border border-gray-200 dark:border-gray-700" aria-label="Toggle theme">
                 <svg x-show="!dark" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v2m0 14v2m9-9h-2M5 12H3m15.36 6.36l-1.42-1.42M7.05 7.05L5.64 5.64m12.02 0L17.95 7.05M7.05 16.95L5.64 18.36" />
@@ -43,19 +43,20 @@ class extends Component {
             </select>
           </div>
       </div>
+          
 
       <!-- Grid of notes -->
 <!-- Grid of notes -->
 <div class="mt-6 h-60  grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
 <!-- Add note card (first) -->
-<div @click="openAdd()" class="cursor-pointer p-4 rounded-2xl border border-dashed border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 shadow-sm flex flex-col justify-between">
+{{-- <div @click="openAdd()" class="cursor-pointer p-4 rounded-2xl border border-dashed border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 shadow-sm flex flex-col justify-between">
 <div>
 <div class="text-3xl">＋</div>
 <h3 class="mt-3 font-semibold">Add a new note</h3>
 <p class="mt-2 text-sm text-gray-500 dark:text-gray-400">Start a blank note or paste content from anywhere. Editor.js blocks supported.</p>
 </div>
 <div class="mt-4 text-xs text-gray-400">Quick capture</div>
-</div>
+</div> --}}
 
 
 <!-- Dynamic notes -->
